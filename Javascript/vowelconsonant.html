@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function vowel(char){
+            char = char.tolowerCase();
+            if('aeiou'.includes(char)){
+                console.log("It's a vowel");
+            }
+            else if(char>='a' && char <='z'){
+                console.log("it is a consonant")
+            }else{
+                console.log("invalid input. please enter an alphabetic character")
+            }
+}
+    </script>
+</head>
+<body>
+    <button onclick="vowel()">click me</button>
+</body>
+</html>

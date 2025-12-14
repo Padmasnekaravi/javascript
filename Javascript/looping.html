@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    //     function show(){
+    //     for( var i=1;i<=100;i++)
+    // {
+    //     console.log("sneka:"+i);//inspect output view
+    //     document.write("<br>padma:"+i);//direct browser view
+    // }
+//}
+//   function show()
+//  {
+//  for(var i=100; i>=1; i--)
+//  {
+// console.log(i);
+//  }
+//}
+ function show(){
+  var n1=parseInt(document.getElementById("t1").value);
+  var n2=parseInt(document.getElementById("t2").value);
+ var s=0 
+ for(var i=n1; i<=n2; i++)
+  {
+
+   s=s+i;
+     if(i%2==0)
+    document.write(`${i}`);
+    else
+    document.write(`${i}+`);
+    }
+    document.write("="+s);
+ }
+
+    </script>
+</head>  
+<body>
+    <input type="text" id="t1" placeholder="enter start number">
+    <br>
+    <input type="text" id="t2" placeholder="enter end number">
+    <br> 
+    <button onclick="show()">clickme</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        sneka=()=>{
+            alert("this  notification for popup message one");
+        }
+        function show()
+        {
+        document.getElementById("res1").innerHTML="line1";
+        document.getElementById("res2").innerHTML="line2";
+
+        setTimeout(sneka,10000);
+        
+        document.getElementById("res3").innerHTML="line3";
+        document.getElementById("res4").innerHTML="line4";            
+       
+        setTimeout(()=>{
+            alert("this  notification for popup message two");
+        },2000);
+       
+        document.getElementById("res5").innerHTML="line5";
+        document.getElementById("res6").innerHTML="line6";
+        }
+
+    </script>
+</head>
+<body>
+    <button onclick="show()">clickme</button>
+    <div id="res1"></div>
+    <div id="res2"></div>
+    <div id="res3"></div>
+    <div id="res4"></div>
+    <div id="res5"></div>
+    <div id="res6"></div>
+</body>
+</html>

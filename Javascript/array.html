@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            var arr=[100,10,200,44,53,112,8,5,3,2];
+            var len=arr.length;
+            var h=0;
+             for(var i=0;i<len;i++)
+             
+        {
+             if(h<arr[i])
+             h=arr[i];
+            document.getElementById("res").innerHTML+="<br>:"+arr[i];
+        }
+        document.getElementById("big").innerHTML="big."+h;
+            }
+    </script>
+</head>
+<body>
+    <button onclick="show()">clicke me</button>
+    <div id="res"></div>
+    <div id ="big"></div>
+</body>
+</html>
+

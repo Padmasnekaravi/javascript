@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var stud={
+            rno:1001,
+            
+            sname:"sneka",
+            marks:[100,90,70,80],
+            workplace:{
+                place1:"chennai",
+                place2:"karur",
+                place3:"madurai"
+            }
+        }
+        //  document.write("<br> student rno:"+stud.rno);
+        // document.write(`<br> student sname:${stud.sname}`);
+        // document.write("<br> student mark:"+stud.marks[1]);
+        // document.write("<br> student workplace:"+stud.workplace ["place2"]);
+         var len=stud.marks.length;
+         for(var i=0;i<len;i++)
+         {
+             document.write(`<br>mark:${i+1}=${stud.marks[i]}`);
+         }
+        //================================
+        for(var s in stud.workplace)
+        {
+            document.write(`<br>${s}=${stud.workplace[s]}`);
+        }
+        // sort means ascending and descending
+        document.write("<br>"+stud.marks.sort((a,b)=>a-b));
+        document.write("<br>"+stud.marks.sort((a,b)=>b-a));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

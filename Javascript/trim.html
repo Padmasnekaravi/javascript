@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show(){
+            var t=document.getElementById("t1").value;
+            document.getElementById("r1").innerHTML="before trim:"+t.length;
+            t=t.trim();
+            document.getElementById("r2").innerHTML="after trim:"+t.length;
+
+            document.getElementById("r3").innerHTML="StartsWith:"+t.startsWith("pad");
+
+            document.getElementById("r4").innerHTML="EndsWith:"+t.endsWith("sneka");
+            
+            document.getElementById("r5").innerHTML="replace:"+t.replace("a","o");
+            document.getElementById("r6").innerHTML="replace:"+t.replaceAll("a","o")
+        }
+    </script>
+</head>
+<body>
+     <input type="text" id="t1" placeholder="Enter your name/text"><br>
+    <input type="button" onclick="show()" value="result"><br>
+    <div id="r1"></div>
+    <div id="r2"></div>
+    <div id="r3"></div>
+    <div id="r4"></div>
+    <div id="r5"></div>
+    <div id="r6"></div>
+    
+    
+</body>
+</html>

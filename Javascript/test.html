@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    find=()=>
+{
+     var m1=parseInt(document.getElementById("t1").value);
+if (m1>18)
+ {
+    document.getElementById("ans").innerHTML="eligible";
+ }
+ else
+ {
+    document.getElementById("ans").innerHTML="not eligible";
+ }
+}
+</script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="enter name">
+    <br>
+    <input type="button" onclick="find()" value="result">
+    <div id="ans"></div>
+</body>
+</html>
